@@ -22,8 +22,8 @@ kind: Service
 apiVersion: v1     
 metadata:
   name: animals-svc
-type: LoadBalancer
 spec:
+  type: LoadBalancer
   selector:
     app: animals    
   ports:          

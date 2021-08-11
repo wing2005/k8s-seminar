@@ -3,21 +3,21 @@ kind: Pod  # Object Type
 metadata: 
  name: spring-music 
 spec:
- containers: # NOTE THAT BELOW HERE WE CAN ADD AS MANY CONTAINERS WE WISH TO ENCAPSULATE IN THE SAME POD
- - name: app1 
-   image: supergiantkir/animals:bear
-   volumeMounts:
-     - name: app-storage
-       mountPath: /storage
-   ports: 
-   - containerPort: 80
- - name: app2
-   image: yanivomc/spring-music:latest
-   volumeMounts:
-     - name: app-storage
-       mountPath: /storage
-   ports: 
-   - containerPort: 8080
+  containers: # NOTE THAT BELOW HERE WE CAN ADD AS MANY CONTAINERS WE WISH TO ENCAPSULATE IN THE SAME POD
+    - name: app1 
+      image: supergiantkir/animals:bear
+      volumeMounts:
+        - name: app-storage
+          mountPath: /storage
+      ports: 
+      - containerPort: 80
+    - name: app2
+      image: yanivomc/spring-music:latest
+      volumeMounts:
+        - name: app-storage
+          mountPath: /storage
+      ports: 
+      - containerPort: 8080
   volumes:
     - name: app-storage
       emptyDir: {}

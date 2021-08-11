@@ -20,7 +20,7 @@ spec:
           image: supergiantkir/animals:bear
           volumeMounts:
             - name: data-vol
-              mountPath: /app
+              mountPath: /tmp/data
       volumes:
         - name: data-vol
           hostPath:

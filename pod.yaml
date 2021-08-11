@@ -5,7 +5,7 @@ metadata:
 spec:
  containers: # NOTE THAT BELOW HERE WE CAN ADD AS MANY CONTAINERS WE WISH TO ENCAPSULATE IN THE SAME POD
  - name: nginx 
-   image: nginx:1.7.9 
+   image: nginx:latest
    ports: 
    - containerPort: 80
  - name: springapp

@@ -22,6 +22,7 @@ kind: Service
 apiVersion: v1     
 metadata:
   name: animals-svc
+type: LoadBalancer
 spec:
   selector:
     app: animals    
@@ -30,5 +31,5 @@ spec:
     protocol: TCP
     port: 80
     targetPort: 80
-    type: LoadBalancer
+    
 

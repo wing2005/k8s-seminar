@@ -18,6 +18,8 @@ spec:
           mountPath: /storage
       ports: 
       - containerPort: 8080
+  nodeSelector:
+    env: prod
   volumes:
     - name: app-storage
       emptyDir: {}

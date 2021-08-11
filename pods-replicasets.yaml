@@ -25,4 +25,4 @@ spec:
         - name: data-vol
           hostPath:
             path: /tmp/data
-            type: Directory
+            type: DirectoryOrCreate

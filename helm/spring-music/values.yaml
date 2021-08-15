@@ -1,0 +1,12 @@
+pods:
+  image: yanivomc/spring-music
+  tag: latest
+  replica: 2
+
+
+loadblancer: enabled
+servicelb:
+        type: LoadBalancer
+        source: 80
+        target: 80
+
